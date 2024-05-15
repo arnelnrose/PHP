@@ -1,41 +1,46 @@
 <?php
-/*  variable = a reusable conatainer that holds data
+/*  
+    variable = a reusable conatainer that holds data
     string, integer, float boolean.
 */
-        echo "VARIABLES AND DATA TYPES <br><br>";
-        //Strings
-        $name = "Arnel Rose";
-        $food = "pizza";
-        $email = "arnelnrose@gmail.com";
 
-        //Integers
-        $age = 42;
-        $user = 2;
-        $quantity = 5;
+//  VARIABLES AND DATA TYPES
+//  STRING
+$name = "Arnel Rose";
+$food = "Pizza";
+$email = "fake143@gmail.com";
 
-        //Float
-        $gpa = 1.5;
-        $price = 4.99;
-        $tax_rate = 5.1;
+// INTEGER
+$age = 25;
+$users = 3;
+$quantity = ;
 
-        //Boleans
-        $employed = true;
-        $online = false;
-        $forSale = true;
+// FLOAT
+$gpa = 1.8;
+$price = 4.99;
+$tax_rate = 5.1;
 
+// BOOLEAN
+$employed = true;
+$online = false;
+$for_sale = true;
 
-        // echo $name;
-        echo "Hello, I'm {$name} <br>";
-        echo "I like {$food}<br>";
-        echo "My email is {$email} <br>";
-        echo "I am {$age} years old <br>";
-        echo "My GPA is {$gpa} <br>";
-        echo "My GPA is {$gpa} <br><br>";
+$total = null;
 
-        $total = 0;
-        echo "You have ordered {$quantity} pieces {$food} <br>";
-        $total = $quantity * $price;
-        echo "And the total is: {$total}";
+echo "Hello, {$name} <br>";
+echo "You Like {$food} <br>";
+echo "Your email is {$email}<br><br>";
 
-       
-?>
+echo "You are {$age} years old <br>";
+echo "The are {$users} users online <br>";
+echo "You would like to buy {$quantity} items <br><br>";
+
+echo "Your gpa is: {$gpa} <br>";
+echo "Your pizza is \${$price} <br>";
+echo "The sales tax rate is: {$tax_rate} <br>";
+echo "Online status: {$online} <br><br>";
+
+echo "You have ordered {$quantity} x {$food}s <br>";
+$total =  $quantity * $price;
+
+echo "Your total is: \${$total}";
