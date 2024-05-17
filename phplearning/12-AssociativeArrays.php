@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Associative Arrays</title>
 </head>
 
@@ -12,27 +11,27 @@
         <label for="country">Enter a Country:</label>
         <input type="text" name="country">
         <input type="submit" value="Submit" required>
-    </form>
+    </form><br />
 </body>
 
 </html>
 <?php
 /*  Associative Arrays - An array made of
-        key => value pairs. */
+        key => value pairs. 
+*/
 
 $capitals = array(
     "USA" => "Washington D.C.",
     "Japan" => "Tokyo",
     "Philippines" => "Manila",
-    "South Korea" => "Seoul"
+    "South Korea" => "Seoul",
+    "India" => "New Delfi"
 );
-$capital = $_POST['country'];
-$capital = $capitals[$_POST['country']];
 
-
-echo $capital;
-echo "The capital is {$capital}";
-
+    // EXAMPLE #1: Accessing associate of array.
+// foreach ($capitals as $key => $value) {
+//     echo "{$key}, {$value} <br>";
+// }
 
 // $capitals["USA"] = "Las Vegas";
 // $capitals["China"] = "Beijing";
@@ -47,6 +46,22 @@ echo "The capital is {$capital}";
 //     echo "{$key}, {$value} <br>";
 // }
 
-// foreach ($capitals as $key => $value) {
-//     echo "{$key}, {$value} <br>";
+// foreach ($keys as $key) {
+//     echo "{$key} <br/>";
 // }
+
+// foreach ($values as $value) {
+//     echo "{$value} <br/>";
+// }
+
+// array_reverse($capitals);
+// foreach ($capitals as $key => $value) {
+//     echo "{$key}, {$value} <br/>";
+// }
+
+// $capital = $_POST['country'];
+// $capital = $capitals[$_POST['country']];
+
+
+// echo $capital;
+// echo "The capital is {$capital}";
