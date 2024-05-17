@@ -10,7 +10,7 @@
 <body>
     <form action="./14-RadioButtons.php" method="post">
         <input type="radio" name="credit_card" value="Visa">Visa<br>
-        <input type="radio" name="credit_card" value="Master Card">Mastercard<br>
+        <input type="radio" name="credit_card" value="Mastercard">Mastercard<br>
         <input type="radio" name="credit_card" value="American Express">American Express<br>
         <input type="submit" name="confirm" value="confirm">
     </form>
@@ -19,25 +19,51 @@
 </html>
 <?php
 
-if (isset($_POST['confirm'])) {
+    // EXAMPLE #1: Credit card selection using IF STATEMENT.
 
-    $credit_card = null;
+  /*  
+    if(isset($_POST["confirm"])){
 
-    if (isset($_POST['credit_card'])) {
-        $credit_card = $_POST['credit_card'];
-    }
-    switch ($credit_card) {
-        case "Visa":
+        $credit_card = null;
+
+        if(isset($_POST["credit_card"])){
+            $credit_card = $_POST["credit_card"];
+        }
+        if($credit_card == "Visa"){
             echo "You selected Visa";
-            break;
-        case "Master Card":
+        }
+        elseif($credit_card == "Mastercard"){
             echo "You selected Mastercard";
-            break;
-        case "American Express":
+        }
+        elseif($credit_card == "American Express"){
             echo "You selected American Express";
-            break;
-        default:
-            echo "Please make a selection.";
+        }
+        else{
+            echo "Please make a selection";
+        }
     }
-}
+*/
+
+// EXAMPLE #2: Credit card selection using SWITCH STATEMENT
+    if (isset($_POST['confirm'])) {
+
+        $credit_card = null;
+
+        if (isset($_POST['credit_card'])) {
+            $credit_card = $_POST['credit_card'];
+        }
+        switch ($credit_card) {
+            case "Visa":
+                echo "You selected Visa";
+                break;
+            case "Master Card":
+                echo "You selected Mastercard";
+                break;
+            case "American Express":
+                echo "You selected American Express";
+                break;
+            default:
+                echo "Please make a selection.";
+        }
+    }
 ?>
