@@ -1,0 +1,28 @@
+CREATING SAMPLE DATABASE IN CMD
+
+STEP1: Run Apache and MySqL on xampp. 
+STEP2: Open CMD
+
+C:\Windows\System32>cd \xampp\mysql\bin
+C:\xampp\mysql\bin>mysql -u root -p
+
+or with Port
+
+C:\xampp\mysql\bin>mysql --port=3306 mysql -u root -p
+Enter password:
+NOTE: Enter for new account.
+
+MariaDB [mysql]>show databases;
+MariaDB [mysql]>create database mydatabase;
+MariaDB [mysql]>show databases;
+MariaDB [mysql]>use mydatabase;
+Database changed
+MariaDB [mydatabase]>show tables;
+Empty set (0.001 sec)
+
+MariaDB [mydatabase]> create table tblitem(
+    -> upc int(13) not null,
+    -> descript varchar(50) not null,
+    -> price double not null);
+
+MariaDB [mydatabase]>describe tblitem;
