@@ -10,9 +10,9 @@ session_start();
 
 <body>
     <!-- This is the login page.<br />
-    <a href="./21A-Session.php">This goes to login page.</a><br /> -->
+    <a href="./21A-Login_Session.php">This goes to login page.</a><br /> -->
 
-    <form action="./21A-Index_Session.php" method="post">
+    <form action="./21A-Login_Session.php" method="post">
         Username:<br />
         <input type="text" name="username"><br />
         Password:<br />
